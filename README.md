@@ -20,3 +20,12 @@ This repository includes practice scripts and mini-projects that cover:
 
 These projects helped reinforce my understanding of core Python concepts.
 Now moving forward with more intermediate projects and real world applications.
+
+##💻 Projects Included
+
+ - Simple Calculator
+ - Factorial Calculator (For Loop)
+ - Factorial Calculator (While Loop)
+ - Leap Year Checker
+ - Reversing List
+ - Find Greatest Number Without Using max()
