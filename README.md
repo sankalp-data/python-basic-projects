@@ -29,3 +29,5 @@ Now moving forward with more intermediate projects and real world applications.
  - Leap Year Checker
  - Reversing List
  - Find Greatest Number Without Using max()
+ - Palindrome Checker
+ - Vowel and Consonants Counter
