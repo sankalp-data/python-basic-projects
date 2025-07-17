@@ -31,3 +31,4 @@ Now moving forward with more intermediate projects and real world applications.
  - Find Greatest Number Without Using max()
  - Palindrome Checker
  - Vowel and Consonants Counter
+ - Bank Account Simulator
