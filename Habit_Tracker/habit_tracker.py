@@ -1,4 +1,6 @@
 import json
+from pprint import pprint
+import calendar
 filepath = r"Habit_Tracker\habit_tracker_file.json"
 
 def open_to_write(file):
@@ -61,10 +63,14 @@ def marking_habit():
             return
         
         if date in content:
-            print(content[date])
+            pprint(content[date])
             ask  = (input("Which habit you want to mark as True i.e. Completed? \n ➡️ "))
-            content[date][ask] = True
-        
+            if ask in content[date]:
+                content[date][ask] = True
+            else:
+                print("Habit not foumd!")
+                return  
+
         else:
             print("No such date...")
             return
@@ -72,16 +78,70 @@ def marking_habit():
     else:
         print("Nothing in habit_tracker file")
 
-    open_to_write(content)        
+    open_to_write(content)
+
+            
             
 
+def view_calendar():
+    content = loading()
 
-# add_habit()
-marking_habit()
+    try:
+        year = int(input("Enter Year :- "))
+        if year < 1 or year > 9999:
+            print("❌ Please enter year between 1 and 9999")
+            return
 
+        month = int(input("Enter Month :- "))
+        if month < 1 or month > 12:
+            print("❌ Please enter valid month (1-12)")
+            return
 
+    except ValueError:
+        print("❌ Please enter valid format or data type!")
+        return
 
+    # Get number of days in the month
+    days_in_month = calendar.monthrange(year, month)[1]
 
+    # Prepare calendar layout
+    print("\n📅 Habit Tracker Calendar")
+    print(calendar.month_name[month], year)
+    print("Mo Tu We Th Fr Sa Su")
+
+    # Get the first weekday of the month (0 = Monday)
+    start_day = calendar.monthrange(year, month)[0]
+    day_counter = 1
+    row = []
+
+    # Fill the first week with blanks
+    for _ in range(start_day):
+        row.append("  ")
+
+    while day_counter <= days_in_month:
+        day_str = f"{day_counter:02}"
+        full_date = f"{year}-{month:02}-{day_str}"
+
+        if full_date in content:
+            # Check if all habits are True
+            if all(content[full_date].values()):
+                label = f"{day_str}✅"
+            else:
+                label = f"{day_str}❌"
+        else:
+            label = f"{day_str}  "
+
+        row.append(label)
+
+        if len(row) == 7:
+            print("  ".join(row))
+            row = []
+
+        day_counter += 1
+
+    # Print remaining days
+    if row:
+        print("  ".join(row))
 
 
 

@@ -27,4 +27,21 @@ It allows you to track daily habits by storing them based on date into a JSON fi
    Loads habit data from JSON, handles missing/corrupt files.
 
  - open_to_write():
-    Writes updated data safely into the JSON file.
+   Writes updated data safely into the JSON file.
+  
+ - view_calendar():
+   Displays habit status day-by-day inside a calendar layout.
+
+
+# About View Calendar Function
+The view_calendar() function — which displays habit status day-by-day inside a calendar layout — was the most challenging part. I took help (from ChatGPT) specifically to understand how to:
+
+ - Use the calendar module to build a month view
+
+ - Format the day layout correctly
+
+ - Match date strings from JSON with the calendar
+
+Every other part of the project (like adding habits, marking them, file handling, data structures, etc.) was coded fully by me from scratch.
+
+
