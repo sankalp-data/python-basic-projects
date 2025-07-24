@@ -32,16 +32,15 @@ It allows you to track daily habits by storing them based on date into a JSON fi
  - view_calendar():
    Displays habit status day-by-day inside a calendar layout.
 
-
-# About View Calendar Function
-The view_calendar() function — which displays habit status day-by-day inside a calendar layout — was the most challenging part. I took help (from ChatGPT) specifically to understand how to:
-
- - Use the calendar module to build a month view
-
- - Format the day layout correctly
-
- - Match date strings from JSON with the calendar
-
-Every other part of the project (like adding habits, marking them, file handling, data structures, etc.) was coded fully by me from scratch.
+ - edit_or_delete():
+  - Edit a habit name for a given date
+  - Delete all habits for a date
 
 
+# Developer Notes
+
+ - The view_calendar() function was the most challenging part and was built with some help to handle alignment and date logic correctly using the calendar module.
+
+ - All other logic was written by me as part of my learning journey.
+
+ - I plan to increase the readability and modularity of the code in future updates.
