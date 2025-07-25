@@ -32,7 +32,7 @@ It's a beginner-friendly project built using **Object-Oriented Programming (OOP)
 1. **Clone or Download this Project:**
 
    ```bash
-   git clone https://github.com/your-username/python-basic-projects.git
+   git clone https://github.com/sankalp-data/python-basic-projects.git
    cd python-basic-projects/bank_account
 
 2. Check Python Installation:
