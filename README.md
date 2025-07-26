@@ -1,4 +1,4 @@
-#Python Basic Projects🐍
+# Python Basic Projects🐍
 
 A collection of beginner-level Python projects created after completing the full Python course by Codewithharry.
 
@@ -21,7 +21,8 @@ This repository includes practice scripts and mini-projects that cover:
 These projects helped reinforce my understanding of core Python concepts.
 Now moving forward with more intermediate projects and real world applications.
 
-##💻 Projects Included
+
+# 💻 Projects Included
 
  - Simple Calculator
  - Factorial Calculator (For Loop)
