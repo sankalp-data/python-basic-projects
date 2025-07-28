@@ -35,3 +35,4 @@ Now moving forward with more intermediate projects and real world applications.
  - Bank Account Simulator
  - Habit Tracker
  - KBC (Kaun Banega Crorepati)
+ - Weather App
